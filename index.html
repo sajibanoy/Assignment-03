@@ -5,10 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 03</title>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS And DaisyUI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': 'rgb(171, 239, 95)',
+                        'secondary': 'rgba(171, 239, 95, 0.5)',
+                        'icon-primary': 'rgb(28, 28, 28)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <header class="bg-base-200">
+        <!-- Navbar Starts -->
+        <nav class="container mx-auto">
+            <!-- Left Side Content -->
+            <div class="navbar">
+                <div class="navbar-start">
+                    <i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45"></i>
+                    <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+                </div>
+                <!-- Centre Content -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Home</a></li>
+                        <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Services</a>
+                        </li>
+                        <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Portfolio</a>
+                        </li>
+                        <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Blogs</a></li>
+                        <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Side content -->
+                <div class="navbar-end hidden md:flex space-x-3">
+                    <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"></i>
+                    <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"></i>
+                    <a
+                        class="btn btn-error bg-primary text-xl font-extrabold text-black border-none outline-none rounded-full">Book
+                        Consult<i
+                            class="fa-solid fa-arrow-right bg-icon-primary text-white p-1 rounded-full -rotate-45"></i></a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Home</a></li>
+                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Services</a></li>
+                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Portfolio</a></li>
+                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Blogs</a></li>
+                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section Starts  -->
+        <section>
+            <div class="hero mx-auto">
+                <div class="hero-content flex-col">
+                    <img src="./assets/banner.png" class=" rounded-lg shadow-2xl" />
+                    <div class="text-center">
+                        <h1 class="text-6xl font-bold">A barn house of this design has a
+                            striking
+                            appearance
+                        </h1>
+                        <p class="py-6 font-medium text-[#494949]">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents, and large windows that flood the space with
+                            natural light.
+                        </p>
+                        <button
+                            class="btn btn-primary bg-secondary text-black text-xl font-bold border-none outline-none hover:text-white">View
+                            Details<i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
 
+    </main>
+    <footer></footer>
 </body>
 
 </html>
