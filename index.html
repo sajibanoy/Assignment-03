@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -45,14 +45,14 @@
     <header class="bg-base-200 py-10">
         <!-- Navbar Starts -->
         <nav class="container mx-auto">
-            <!-- Left Side Content -->
-            <div class="navbar">
-                <div class="navbar-start">
-                    <i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45"></i>
-                    <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+            <div class="navbar justify-between">
+                <!-- Left Side Content -->
+                <div>
+                    <i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45 mr-2"></i>
+                    <a class=" text-3xl font-extrabold">Rinterio</a>
                 </div>
                 <!-- Centre Content -->
-                <div class="navbar-center hidden lg:flex">
+                <div class="hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base">
                         <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Home</a></li>
                         <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Services</a>
@@ -64,37 +64,40 @@
                         </li>
                     </ul>
                 </div>
-                <!-- End Side content -->
-                <div class="navbar-end hidden md:flex space-x-3">
-                    <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"></i>
-                    <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"></i>
-                    <a
-                        class="btn btn-error bg-primary text-xl font-extrabold text-black border-none outline-none rounded-full">Book
-                        Consult<i
-                            class="fa-solid fa-arrow-right bg-icon-primary text-white p-1 rounded-full -rotate-45"></i></a>
-                </div>
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                <!-- right Side content -->
+                <div>
+                    <div class="pr-0 hidden md:flex space-x-3">
+                        <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full"></i>
+                        <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full"></i>
+                        <a
+                            class="btn bg-primary text-xl font-extrabold text-black border-none outline-none rounded-full">Book
+                            Consult<i
+                                class="fa-solid fa-arrow-right bg-icon-primary text-white p-1 rounded-full -rotate-45"></i></a>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Home</a></li>
-                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Services</a></li>
-                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Portfolio</a></li>
-                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Blogs</a></li>
-                        <li class="hover:text-[#494949] hover:font-extrabold"><a>Contact Us</a></li>
-                    </ul>
+                    <!-- Dropdown icon Content -->
+                    <div class="dropdown md:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li class="hover:text-[#494949] hover:font-extrabold"><a>Home</a></li>
+                            <li class="hover:text-[#494949] hover:font-extrabold"><a>Services</a></li>
+                            <li class="hover:text-[#494949] hover:font-extrabold"><a>Portfolio</a></li>
+                            <li class="hover:text-[#494949] hover:font-extrabold"><a>Blogs</a></li>
+                            <li class="hover:text-[#494949] hover:font-extrabold"><a>Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
         <!-- Banner Section Starts  -->
-        <section>
-            <div class="hero mx-auto mt-12">
+        <section class="container mx-auto">
+            <div class="hero mt-12">
                 <div class="hero-content flex-col">
                     <img src="./assets/banner.png" class=" rounded-lg shadow-2xl" />
                     <div class="text-center">
@@ -117,6 +120,7 @@
             </div>
         </section>
     </header>
+    <!-- Main Section Starts -->
     <main class="bg-base-200 mt-20">
         <!-- About Us Section Starts -->
         <section class="container mx-auto hero py-10">
