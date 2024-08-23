@@ -42,7 +42,7 @@
 </head>
 
 <body class="font-manrope">
-    <header class="bg-base-200 py-10">
+    <header class="bg-base-200 mt-5 lg:pt-10">
         <!-- Navbar Starts -->
         <nav class="container mx-auto">
             <div class="navbar justify-between">
@@ -97,11 +97,12 @@
         </nav>
         <!-- Banner Section Starts  -->
         <section class="container mx-auto">
-            <div class="hero mt-12">
+            <div class="hero lg:mt-12">
                 <div class="hero-content flex-col">
                     <img src="./assets/banner.png" class=" rounded-lg shadow-2xl" />
+                    <!-- Text Content -->
                     <div class="text-center">
-                        <h1 class="text-3xl lg:text-6xl font-bold mt-6">A barn house of this design has a
+                        <h1 class="text-3xl text-[#212121] lg:text-6xl font-bold mt-6">A barn house of this design has a
                             striking
                             appearance
                         </h1>
@@ -112,7 +113,7 @@
                             natural light.
                         </p>
                         <button
-                            class="btn btn-primary bg-secondary text-black text-xl font-bold border-none outline-none hover:text-white">View
+                            class="btn bg-secondary rounded-full text-black text-xl font-bold border-none outline-none hover:text-white">View
                             Details<i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45"></i>
                         </button>
                     </div>
@@ -121,32 +122,68 @@
         </section>
     </header>
     <!-- Main Section Starts -->
-    <main class="bg-base-200 mt-20">
+    <main>
         <!-- About Us Section Starts -->
-        <section class="container mx-auto hero py-10">
-            <!-- Right Side image -->
-            <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-                <img src="./assets/Rectangle.png" class="max-w-sm rounded-lg shadow-2xl">
-                <!-- Left side Text Content -->
-                <div class="mr-9">
-                    <img class="hidden lg:flex border-2 border-dashed mb-4" src="./assets/Vector.png" alt="">
-                    <button
-                        class="bg-white rounded-full px-3 py-1 text-black text-base font-bold border-none outline-none mb-4"><i
-                            class="fa-solid fa-arrow-right mr-2"></i>About Us
-                    </button>
-                    <h1 class="text-2xl lg:text-4xl font-bold mb-4"> We design thoughtful, <br>liveable spaces</h1>
-                    <p class="py-6 font-medium lg:text-base">
-                        The barn house captivates with its blend of rustic charm and <br> modern sophistication,
-                        featuring weathered wood, sleek metal accents.
-                    </p>
-                    <div>
-                        <img src="" alt="">
-
+        <section class="bg-base-200 mt-10 pt-10 lg:pt-0 lg:mt-28 lg:pb-28">
+            <div class="container mx-auto flex flex-col lg:flex-row">
+                <!-- Left side Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="lg:relative">
+                        <!-- Image Div -->
+                        <div class="mr-3 hidden lg:flex mt-2 lg:relative lg:Sz-20">
+                            <img class="border-2 border-dashed py-3" src="./assets/Vector.png" alt="">
+                        </div>
+                        <!-- Button Div -->
+                        <div class="lg:absolute lg:top-[calc(100%-10px)] lg:pl-6">
+                            <button
+                                class="bg-white rounded-full px-3 py-1 text-black text-base font-bold border-none outline-none">
+                                <i class="fa-solid fa-arrow-right"></i>About Us
+                            </button>
+                        </div>
                     </div>
+                    <!-- Text content -->
+                    <div class="mt-4 lg:ml-6 lg:mt-10">
+                        <h1 class="text-2xl 
+                         text-[#212121] lg:text-4xl font-extrabold mb-4">
+                            We design thoughtful,<br>liveable spaces
+                        </h1>
+                        <p class="lg:py-6 font-medium lg:text-base">
+                            The barn house captivates with its blend of rustic charm and <br> modern sophistication,
+                            featuring weathered wood, sleek metal accents.
+                        </p>
+                        <!-- Card-01 -->
+                        <div class="bg-base-100 rounded-2xl p-4 mt-6 shadow-xl flex">
+                            <figure>
+                                <img src="./assets/commercial.png" alt="Shoes" />
+                            </figure>
+                            <div class="ml-3">
+                                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                                <p class="font-medium">The barn house captivates with its blend <br>of rustic charm and
+                                    modern.</p>
+                            </div>
+                        </div>
+                        <!-- Card-02 -->
+                        <div class="bg-base-100 rounded-2xl p-4 shadow-xl mt-6 flex">
+                            <figure>
+                                <img src="./assets/commercial.png" alt="Shoes" />
+                            </figure>
+                            <div class="ml-3">
+                                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                                <p class="font-medium">The barn house captivates with its blend <br>of rustic charm and
+                                    modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side image -->
+                <div class="flex-1 lg:ml-10 mt-6 lg:mt-24">
+                    <img src="./assets/Rectangle.png">
                 </div>
             </div>
         </section>
     </main>
+
+
     <footer></footer>
 </body>
 
