@@ -43,17 +43,18 @@
 
 <body class="font-manrope">
     <!-- header section starts -->
-    <header class="bg-base-200 pt-4 lg:pt-10">
+    <header class="bg-gradient-to-b from-white to-white/0 pt-4 lg:pt-10">
         <!-- Navbar Starts -->
-        <nav class="container mx-auto">
-            <div class="navbar justify-between p-4">
+        <nav class="container mx-auto w-full box-border overflow-hidden">
+            <div class="flex justify-between p-4 w-full">
                 <!-- Left Side Content -->
-                <div>
+                <div class="lg:w-2/12">
                     <i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45 mr-2"></i>
-                    <a class=" text-3xl font-extrabold">Rinterio</a>
+                    <a class="text-3xl font-extrabold">Rinterio</a>
                 </div>
+
                 <!-- Centre Content -->
-                <div class="hidden lg:flex">
+                <div class="hidden  lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base">
                         <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Home</a></li>
                         <li class="hover:text-[#494949] hover:font-extrabold duration-300 ease-in-out"><a>Services</a>
@@ -65,22 +66,23 @@
                         </li>
                     </ul>
                 </div>
-                <!-- right Side content -->
-                <div>
-                    <div class="hidden md:flex space-x-6">
-                        <div class="space-x-4">
-                            <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-full"></i>
-                            <i class="fa-solid fa-cart-shopping bg-white p-3 rounded-full"></i>
-                        </div>
+
+                <!-- Right Side Content -->
+                <div class="flex justify-end">
+                    <!-- Icons for medium and larger devices -->
+                    <div class="hidden md:flex items-center space-x-2">
+                        <i class="fa-solid fa-magnifying-glass bg-white shadow-lg p-3 rounded-full"></i>
+                        <i class="fa-solid fa-cart-shopping bg-white shadow-lg p-3 rounded-full"></i>
                         <button
-                            class="btn bg-primary text-xl font-extrabold text-black border-none outline-none rounded-full">Book
-                            Consult<i
-                                class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"></i>
+                            class="btn bg-primary text-xl font-extrabold text-black border-none outline-none rounded-full flex items-center">
+                            Book Consult
+                            <i class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45 ml-2"></i>
                         </button>
                     </div>
-                    <!-- Dropdown icon Content -->
-                    <div class="dropdown bg-white rounded-full border-solid border-2 md:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost ">
+
+                    <!-- Dropdown for small devices -->
+                    <div class="dropdown bg-white rounded-full border-solid border-2 lg:hidden flex items-center">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -103,7 +105,7 @@
         <section class="container mx-auto">
             <div class="hero lg:mt-12">
                 <div class="hero-content flex-col">
-                    <img src="./assets/banner.png" class=" rounded-lg shadow-2xl" />
+                    <img src="./assets/banner.png" class="rounded-lg shadow-2xl" />
                     <!-- Text Content -->
                     <div class="text-center">
                         <h1 class="text-3xl font-extrabold mt-6 text-[#212121] lg:text-6xl">A barn house of this design
@@ -129,14 +131,14 @@
     <!-- Main Section Starts -->
     <main>
         <!-- About Us Section Starts -->
-        <section class="bg-base-200 mt-10 pt-10 lg:pt-0 lg:mt-28">
+        <section class="bg-base-200 mt-10 pt-10 lg:pt-0 lg:mt-20">
             <div class="container mx-auto flex flex-col lg:flex-row">
                 <!-- Left side Content -->
                 <div class="flex-1 text-center lg:text-left">
                     <div class="lg:relative">
                         <!-- Image Div -->
                         <div class="mr-3 hidden lg:flex mt-2 lg:relative lg:z-20">
-                            <img class="border-2 border-dashed py-3" src="./assets/Vector.png" alt="">
+                            <img class="border-2 border-dashed py-3" src="./assets/Vector.png" alt="iconic-image">
                         </div>
                         <!-- Button Div -->
                         <div class="lg:absolute lg:top-[calc(100%-10px)] lg:pl-6">
@@ -161,7 +163,7 @@
                             <!-- Card-01 -->
                             <div class=" bg-base-100 rounded-2xl p-4 mt-6 shadow-xl flex">
                                 <figure>
-                                    <img src="./assets/commercial.png" alt="Shoes" />
+                                    <img src="./assets/commercial.png" alt="iconic-image" />
                                 </figure>
                                 <div class="ml-3">
                                     <h3 class="card-title text-xl font-extrabold">Commercial</h3>
@@ -173,7 +175,7 @@
                             <!-- Card-02 -->
                             <div class="bg-base-100 rounded-2xl p-4 shadow-xl mt-6 flex">
                                 <figure>
-                                    <img src="./assets/commercial.png" alt="Shoes" />
+                                    <img src="./assets/residential.png" alt="iconic-image" />
                                 </figure>
                                 <div class="ml-3">
                                     <h2 class="card-title text-xl font-extrabold">Commercial</h2>
@@ -187,7 +189,7 @@
                 </div>
                 <!-- Right Side image -->
                 <div class="px-4 flex-1 lg:ml-10 mt-6 lg:mt-24">
-                    <img src="./assets/Rectangle.png">
+                    <img src="./assets/Rectangle.png" alt="A big home image">
                 </div>
             </div>
         </section>
@@ -214,7 +216,7 @@
                     <!-- Card-01 -->
                     <div class="bg-[#E7C1D3] rounded-2xl p-4 shadow-xl">
                         <figure>
-                            <img src="./assets/concept.png" alt="light" />
+                            <img src="./assets/concept.png" alt="iconic-light-image" />
                         </figure>
                         <div class="ml-3 mt-2">
                             <h3 class="card-title text-xl font-extrabold">Concept</h3>
@@ -227,7 +229,7 @@
                     <!-- Card-02 -->
                     <div class="bg-[#EFDA6E] rounded-2xl p-4 shadow-xl">
                         <figure>
-                            <img src="./assets/flow-chart.png" alt="image" />
+                            <img src="./assets/flow-chart.png" alt="design-process-image" />
                         </figure>
                         <div class="ml-3 mt-2">
                             <h3 class="card-title text-xl font-extrabold">Design Process</h3>
@@ -240,7 +242,7 @@
                     <!-- Card-03 -->
                     <div class="bg-[#A4DAC3] rounded-2xl p-4 shadow-xl">
                         <figure>
-                            <img src="./assets/vision.png" alt="Image" />
+                            <img src="./assets/vision.png" alt="design-supervision-image" />
                         </figure>
                         <div class="ml-3 mt-2">
                             <h3 class="card-title text-xl font-extrabold">Supervision</h3>
@@ -253,7 +255,7 @@
                     <!-- Card-04 -->
                     <div class="bg-[#77AAEA] rounded-2xl p-4 shadow-xl">
                         <figure>
-                            <img src="./assets/budget-planning.png" alt="image" />
+                            <img src="./assets/budget-planning.png" alt="calculator-image" />
                         </figure>
                         <div class="ml-3 mt-2">
                             <h3 class="card-title text-xl font-extrabold">Budget Planning </h3>
@@ -269,15 +271,15 @@
         <section class="pb-4 lg:pb-20">
             <div class="container mx-auto p-4 mt-4 lg:pt-16">
                 <!-- Text Content -->
-                <div class="text-center space-y-4">
+                <div class="text-center space-y-5">
                     <button
                         class="bg-secondary rounded-full px-3 py-1 text-black text-base font-bold border-none outline-none">
                         <i class="fa-solid fa-arrow-right"></i>Explore our Latest works
                     </button>
-                    <h1 class="text-2xl 
+                    <h1 class="pt-2 lg:pt-4 text-2xl 
                     text-[#212121] lg:text-4xl font-extrabold">Our Latest Portfolio
                     </h1>
-                    <p class="font-medium p-4 lg:text-base lg:pt-6">
+                    <p class="font-medium lg:text-base">
                         The barn house captivates with its blend of rustic charm and modern sophistication,<br>
                         featuring
                         weathered wood, sleek metal accents.
@@ -289,11 +291,12 @@
                     <div class="lg:grid grid-cols-12 lg:gap-4">
                         <!-- card-01 -->
                         <div class="bg-white shadow-lg border-2 rounded-2xl p-5 gap-6 lg:flex col-span-9">
-                            <div>
-                                <img class="w-full" src="./assets/img1.png" alt="image">
+                            <div class="lg:w-80">
+                                <img class="w-full h-full border-2 border-dashed border-gray-400"
+                                    src="./assets/img1.png" alt="Home-design-image">
                             </div>
                             <div>
-                                <h3 class="card-title text-xl font-extrabold mt-6 lg:mt-0">Commercial</h3>
+                                <h3 class="card-title text-xl font-extrabold mt-6">Commercial</h3>
                                 <p class="font-medium mt-4"> The barn house captivates with its blend of rustic charm
                                     <br>
                                     and
@@ -307,8 +310,9 @@
                         </div>
                         <!-- card-02 -->
                         <div class="bg-white shadow-lg border-2 rounded-2xl p-5 lg:flex mt-4 lg:mt-0 col-span-3">
-                            <div>
-                                <img class="w-full" src="./assets/img2.png" alt="image">
+                            <div class="lg:w-80">
+                                <img class="w-full h-full border-2 border-dashed border-gray-400"
+                                    src="./assets/img2.png" alt="Home-design-image">
                             </div>
                         </div>
                     </div>
@@ -316,17 +320,19 @@
                     <div class="mt-4 lg:grid grid-cols-12 lg:gap-4">
                         <!-- card-01 -->
                         <div class="bg-white shadow-lg border-2 rounded-2xl p-5 lg:flex mt-4 lg:mt-0 col-span-3">
-                            <div>
-                                <img class="w-full" src="./assets/img3.png" alt="image">
+                            <div class="lg:w-80">
+                                <img class="w-full border-2 border-dashed border-gray-400" src="./assets/img3.png"
+                                    alt="Home-design-image">
                             </div>
                         </div>
                         <!-- card-02 -->
                         <div class="bg-white shadow-lg border-2 rounded-2xl p-5 gap-6 mt-4 lg:mt-0 lg:flex col-span-6">
-                            <div>
-                                <img class="w-full" src="./assets/img4.png" alt="image">
+                            <div class="lg:w-80">
+                                <img class="w-full h-full border-2 border-dashed border-gray-400"
+                                    src="./assets/img4.png" alt="Home-design-image">
                             </div>
                             <div>
-                                <h3 class="card-title text-xl font-extrabold mt-6 lg:mt-0">Commercial</h3>
+                                <h3 class="card-title text-xl font-extrabold mt-6 ">Commercial</h3>
                                 <p class="font-medium mt-4"> The barn house captivates with its blend of rustic charm
                                     and modern.
                                 </p>
@@ -338,9 +344,84 @@
                         </div>
                         <!-- card-03 -->
                         <div class="bg-white shadow-lg border-2 rounded-2xl p-5 lg:flex mt-4 lg:mt-0 col-span-3">
-                            <div>
-                                <img class="w-full" src="./assets/img5.png" alt="image">
+                            <div class="lg:w-80">
+                                <img class="w-full border-2 border-dashed border-gray-400" src="./assets/img5.png"
+                                    alt="Home-design-image">
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- What others says about us -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">What Others Say About Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card shadow-lg bg-sky-300 p-6">
+                        <img src="./assets/image-01.jpg" alt="businessman-image"
+                            class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-center">John Doe</h3>
+                        <p class="text-gray-600 text-center mt-2">"The best construction company I've ever worked with.
+                            Professional and reliable."</p>
+                        <div class="text-center mt-4">
+                            <button class="btn bg-orange-400 text-white border-none hover:text-black">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card shadow-lg bg-orange-300 p-6">
+                        <img src="./assets/image-02.jpg" alt="businessman-image"
+                            class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-center">Jane Smith</h3>
+                        <p class="text-gray-600 text-center mt-2">"Exceptional service and quality. Highly recommend for
+                            any building projects."</p>
+                        <div class="text-center mt-4">
+                            <button class="btn bg-orange-400 text-white border-none hover:text-black">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card shadow-lg bg-amber-300 p-6">
+                        <img src="./assets/image-03.jpg" alt="business-woman-image"
+                            class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-center">Michael Brown</h3>
+                        <p class="text-gray-600 text-center mt-2">"They delivered on time and exceeded our expectations.
+                            Great work!"</p>
+                        <div class="text-center mt-4">
+                            <button class="btn bg-orange-400 text-white border-none hover:text-black">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card shadow-lg bg-lime-300 p-6">
+                        <img src="./assets/image-04.jpg" alt="businessman-image"
+                            class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-center">Emily Wilson</h3>
+                        <p class="text-gray-600 text-center mt-2">"A trustworthy company with excellent customer
+                            service. Very satisfied!"</p>
+                        <div class="text-center mt-4">
+                            <button class="btn bg-orange-400 text-white border-none hover:text-black">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card shadow-lg bg-green-300 p-6">
+                        <img src="./assets/image-05.jpg" alt="businessman-image"
+                            class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-center">David Johnson</h3>
+                        <p class="text-gray-600 text-center mt-2">"Highly skilled and knowledgeable team. They brought
+                            our vision to life."</p>
+                        <div class="text-center mt-4">
+                            <button class="btn bg-orange-400 text-white border-none hover:text-black">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card shadow-lg bg-violet-300 p-6">
+                        <img src="./assets/image-06.jpg" alt="business-woman-image"
+                            class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-center">Sophia Lee</h3>
+                        <p class="text-gray-600 text-center mt-2">"Outstanding craftsmanship and attention to detail. We
+                            love our new building!"</p>
+                        <div class="text-center mt-4">
+                            <button class="btn bg-orange-400 text-white border-none hover:text-black">Read More</button>
                         </div>
                     </div>
                 </div>
